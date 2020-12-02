@@ -6508,9 +6508,10 @@ gatsby-page-utils@^0.2.28:
     lodash "^4.17.20"
     micromatch "^4.0.2"
 
-gatsby-plugin-gatsby-cloud@gatsby-inc/gatsby-plugin-gatsby-cloud#dmccraw/add-hsts-to-readme:
-  version "0.0.3"
-  resolved "git+ssh://git@github.com/gatsby-inc/gatsby-plugin-gatsby-cloud.git#af35fbf876876c8ad231dd5bfea5be39b1aae4bf"
+gatsby-plugin-gatsby-cloud@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-0.0.4.tgz#1a08606027199c0549da722311c8ed2e59d44e6c"
+  integrity sha512-38RaglwIV5RGKqg1HVpMobNQ/5SBMZKFv1zM1muQyvuO4QQ7X/fgG1nAcA+3ROyVgb+eExJAjpQi9lTX+pkm7Q==
   dependencies:
     "@babel/runtime" "^7.11.2"
     fs-extra "^8.1.0"
