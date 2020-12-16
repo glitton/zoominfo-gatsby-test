@@ -6068,10 +6068,17 @@ gatsby-page-utils@^0.5.0:
     lodash "^4.17.20"
     micromatch "^4.0.2"
 
-gatsby-plugin-gatsby-cloud@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-0.0.4.tgz#1a08606027199c0549da722311c8ed2e59d44e6c"
-  integrity sha512-38RaglwIV5RGKqg1HVpMobNQ/5SBMZKFv1zM1muQyvuO4QQ7X/fgG1nAcA+3ROyVgb+eExJAjpQi9lTX+pkm7Q==
+gatsby-plugin-create-client-paths@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-create-client-paths/-/gatsby-plugin-create-client-paths-2.7.0.tgz#411e20f70b3fbad778ce87af77c3a9f7849fd465"
+  integrity sha512-pRGuH2XBJkVegss9mH3/9n01jQDDmYtMw6lKJwSXpRBDGK+48oW6f2orKiMPL7K3m4lTztoD+MqVcX8ZvWsCvA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+
+gatsby-plugin-gatsby-cloud@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-0.0.5.tgz#f307376539fd24605e2cb9440e99c9fa01e360fd"
+  integrity sha512-XtxTpOSW5gy6td+n4kOodqTQzqftZvyFm9op+emVNHkMkSg3VJeA7NPbKGUkQzoieOraBOdBpqGQ7KbD8mvBbQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     fs-extra "^8.1.0"
@@ -6088,6 +6095,17 @@ gatsby-plugin-manifest@^2.4.35:
     gatsby-core-utils "^1.3.23"
     semver "^7.3.2"
     sharp "^0.25.4"
+
+gatsby-plugin-netlify@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.8.0.tgz#686323c18d920e0091f6df03c9e35b819f03ae72"
+  integrity sha512-Nz38dvPBAwqVQdoRWZLip1ITzgZB6noiZq9NbpiVX/GW3e1dFaLPZH0bnwp0rCkt6MIjxgqELSjR5YzhRzaERA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    fs-extra "^8.1.0"
+    kebab-hash "^0.1.2"
+    lodash "^4.17.20"
+    webpack-assets-manifest "^3.1.1"
 
 gatsby-plugin-offline@^3.2.37:
   version "3.2.37"
