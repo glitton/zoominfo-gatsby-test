@@ -27,3 +27,14 @@ exports.createPages = ({ actions }) => {
     statusCode: 200,
   })
 }
+
+exports.onCreateWebpackConfig = ({ plugins, actions }) => {
+  actions.setWebpackConfig({
+    plugins: [
+      plugins.define({
+        "process.env.__BUILD_DATE__": JSON.stringify(new Date().toISOString()),
+        "process.env.__NODE_VERSION__": JSON.stringify(process.version),
+      }),
+    ],
+  })
+}
