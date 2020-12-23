@@ -17,8 +17,14 @@ const IndexPage = () => (
     </div>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    <Link to="/paths/">Paths</Link> <br />
     <Link to="/about/">About</Link> <br />
+    <Link to="/paths/">Paths</Link> <br />
+    <Link to="/path1/">Path 1</Link> <br />
+    <Link to="/path2/path2/123/456">Path 2</Link> <br />
+    <Link to="/path3/123/456/">Path 3</Link> <br />
+    <Link to="/path4/123/">Path 4</Link> <br />
+    <Link to="/use-cases/campaign-event/emoji.tinder.com">Use cases</Link>{" "}
+    <br />
   </Layout>
 )
 
