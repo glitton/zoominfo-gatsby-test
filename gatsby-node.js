@@ -4,9 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
+const path = require(`path`)
+
 // You can delete this file if you're not using it
-exports.createPages = ({ actions }) => {
-  const { createRedirect } = actions
+exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   createRedirect({
     fromPath: "/about-2/",
     toPath: "/about/",
@@ -25,6 +26,14 @@ exports.createPages = ({ actions }) => {
     fromPath: "/about-all/",
     toPath: "/about/",
     statusCode: 200,
+  })
+
+  const useCaseTemplatePath = path.resolve(`src/templates/use-cases/index.js`)
+  const slug = `campaign-event/emoji.tinder.com`
+
+  createPage({
+    path: `/use-cases/${slug}`,
+    component: useCaseTemplatePath,
   })
 }
 
