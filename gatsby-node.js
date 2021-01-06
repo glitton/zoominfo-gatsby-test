@@ -28,6 +28,13 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     statusCode: 200,
   })
 
+  createRedirect({
+    fromPath: "/packages/*",
+    toPath: "/plugins/:splat",
+    isPermanent: true,
+    force: true,
+  })
+
   const useCaseTemplatePath = path.resolve(`src/templates/use-cases/index.js`)
   const slug = `campaign-event/emoji.tinder.com`
 
