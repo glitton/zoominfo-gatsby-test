@@ -6254,9 +6254,9 @@ gatsby-plugin-create-client-paths@^2.7.0:
     "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-functions@^0.1.0-2:
-  version "0.1.0-functions.17291"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-functions/-/gatsby-plugin-functions-0.1.0-functions.17291.tgz#6e4ed9d7208cd373541a084c31697f201ede9040"
-  integrity sha512-CZLYYL2VQFnmcwr0Se3gRnTERAN0VSnwsF6FS2zg7WYwdC05OwwLK8RO4venF5vHOMozFo6rki/Ou+au+25JXg==
+  version "0.1.0-2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-functions/-/gatsby-plugin-functions-0.1.0-2.tgz#9c0b36a6f7449118ceb6c5bb3f7679bf338b2b32"
+  integrity sha512-mXIwu0WBivArdxrD8f/QFmy1Jzu66kmZwzotNDr+446yY5wdxo090aGTgWqV7EPHEWm+lD3cq/DS7b7cpZ2DnA==
   dependencies:
     "@babel/core" "^7.12.8"
     "@babel/preset-env" "^7.12.7"
@@ -6264,6 +6264,7 @@ gatsby-plugin-functions@^0.1.0-2:
     babel-loader "^8.2.1"
     chokidar "^3.4.2"
     fs-exists-cached "^1.0.0"
+    gatsby-core-utils "^1.5.0"
     gatsby-page-utils "^0.4.0-next.0"
     globby "^11.0.1"
     lodash "^4.17.20"
