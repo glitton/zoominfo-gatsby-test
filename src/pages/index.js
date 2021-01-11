@@ -9,10 +9,12 @@ const IndexPage = () => {
   const [time, setTime] = useState(``)
   useEffect(() => {
     const interval = setInterval(async () => {
-      const res = await fetch(`/functions/time.js`).then(res => {
-        console.log(res)
-        return res.json
-      })
+      const res = await fetch(`/functions/time.js`, { method: "POST" }).then(
+        res => {
+          console.log(res)
+          return res.json
+        }
+      )
       console.log(res)
       const data = res["data"]
       console.log(data)
