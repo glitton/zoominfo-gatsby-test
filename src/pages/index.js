@@ -7,24 +7,24 @@ import SEO from "../components/seo"
 
 const IndexPage = () => {
   const [time, setTime] = useState(``)
-  // useEffect(() => {
-  //   const interval = setInterval(async () => {
-  //     const res = await fetch(`/functions/time.js`, { method: "POST" }).then(
-  //       res => {
-  //         console.log(res)
-  //         return res.json
-  //       }
-  //     )
-  //     console.log(res)
-  //     const data = res["data"]
-  //     console.log(data)
-  //     setTime(new Date(data).toLocaleDateString("en-US"))
-  //   }, 1000)
+  useEffect(() => {
+    const interval = setInterval(async () => {
+      const res = await fetch(`/functions/time.js`, { method: "POST" }).then(
+        res => {
+          console.log(res)
+          return res.json
+        }
+      )
+      console.log(res)
+      const data = res["data"]
+      console.log(data)
+      setTime(new Date(data).toLocaleDateString("en-US"))
+    }, 1000)
 
-  //   return () => {
-  //     clearInterval(interval)
-  //   }
-  // }, [])
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
 
   return (
     <Layout>
