@@ -9,8 +9,12 @@ const IndexPage = () => {
   const [time, setTime] = useState(``)
   useEffect(() => {
     const interval = setInterval(async () => {
-      const { data } = await fetch(`/functions/time.js`).then(res => res.json())
-      setTime(new Date(data).toLocaleTimeString("en-US"))
+      const res = await fetch(`/functions/time.js`, { method: "POST" }).then(
+        res => {
+          return res.json()
+        }
+      )
+      setTime(new Date(res["date"]).toLocaleDateString("en-US"))
     }, 1000)
 
     return () => {
@@ -21,7 +25,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Dustin McCraw,</h1>
+      <h1>Hi Dustin McCraw,</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
       <p>Built on {process.env.__BUILD_DATE__}</p>
