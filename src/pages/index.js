@@ -9,12 +9,13 @@ const IndexPage = () => {
   const [time, setTime] = useState(``)
   useEffect(() => {
     const interval = setInterval(async () => {
-      const res = await fetch(`/functions/time.js`, { method: "POST" }).then(
-        res => {
-          return res.json()
-        }
-      )
-      setTime(new Date(res["date"]).toLocaleDateString("en-US"))
+      const res = await fetch(`/functions/time.js`, {
+        method: "POST",
+      }).then(res => res.json())
+      setTime(new Date(res["date"]).toLocaleDateString("en-US"), {
+        dateStyle: "full",
+        timeStyle: "full",
+      })
     }, 1000)
 
     return () => {
