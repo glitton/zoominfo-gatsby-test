@@ -12,10 +12,11 @@ const IndexPage = () => {
       const res = await fetch(`/functions/time.js`, {
         method: "POST",
       }).then(res => res.json())
-      setTime(new Date(res["date"]).toLocaleDateString("en-US"), {
-        dateStyle: "full",
-        timeStyle: "full",
-      })
+      setTime(
+        `${new Date(res["date"]).toLocaleDateString("en-US")} ${new Date(
+          res["date"]
+        ).toLocaleTimeString("en-US")}`
+      )
     }, 1000)
 
     return () => {
