@@ -1,6 +1,5 @@
 module.exports = (req, res) => {
   res.status(200).send({
-    data: Date.now(),
-    id: 123,
+    date: Date.now(),
   })
 }
