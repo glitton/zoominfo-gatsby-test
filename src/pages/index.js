@@ -43,6 +43,7 @@ const IndexPage = () => {
       <Link to="/path2/path2/123/456">Path 2</Link> <br />
       <Link to="/path3/123/456/">Path 3</Link> <br />
       <Link to="/path4/123/">Path 4</Link> <br />
+      <Link to="/packages/">Packages -> Plugins</Link> <br />
       <Link to="/use-cases/campaign-event/emoji.tinder.com">
         Use cases
       </Link>{" "}
