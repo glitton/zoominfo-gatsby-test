@@ -17,7 +17,7 @@ const IndexPage = () => {
           res["date"]
         ).toLocaleTimeString("en-US")}`
       )
-    }, 1000)
+    }, 10000)
 
     return () => {
       clearInterval(interval)
