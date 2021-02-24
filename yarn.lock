@@ -6256,10 +6256,10 @@ gatsby-plugin-functions@^0.1.0-3:
     lodash "^4.17.20"
     webpack "^5.4.0"
 
-gatsby-plugin-gatsby-cloud@^1.1.0-next.2:
-  version "1.1.0-next.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-1.1.0-next.2.tgz#6d78731ef85b62a6b5722f5a809444c88bb7a2b6"
-  integrity sha512-aCYIJRH1JWthQgwWZES2cLszr4wTlPbZDOfSa0KlAEHdd2/ikT8VN0dzJkmdYXxnfcyWikkrLsTHD+AMTMkRAA==
+gatsby-plugin-gatsby-cloud@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-1.0.2.tgz#0225a8394f289f6d7263e8d9d96ea935e30f20c7"
+  integrity sha512-I/cVwA8i8fuvhOobSyOkSdi868Shr9sEx2Fj0tOZq5JOlWbQ7YoWAPSW8dAvXWfy4pc5Bnp8GhG0uv1Zct1xWw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     fs-extra "^8.1.0"
