@@ -6256,12 +6256,12 @@ gatsby-plugin-functions@^0.1.0-3:
     lodash "^4.17.20"
     webpack "^5.4.0"
 
-gatsby-plugin-gatsby-cloud@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-0.0.5.tgz#f307376539fd24605e2cb9440e99c9fa01e360fd"
-  integrity sha512-XtxTpOSW5gy6td+n4kOodqTQzqftZvyFm9op+emVNHkMkSg3VJeA7NPbKGUkQzoieOraBOdBpqGQ7KbD8mvBbQ==
+gatsby-plugin-gatsby-cloud@^1.1.0-next.2:
+  version "1.1.0-next.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-1.1.0-next.2.tgz#6d78731ef85b62a6b5722f5a809444c88bb7a2b6"
+  integrity sha512-aCYIJRH1JWthQgwWZES2cLszr4wTlPbZDOfSa0KlAEHdd2/ikT8VN0dzJkmdYXxnfcyWikkrLsTHD+AMTMkRAA==
   dependencies:
-    "@babel/runtime" "^7.11.2"
+    "@babel/runtime" "^7.12.5"
     fs-extra "^8.1.0"
     kebab-hash "^0.1.2"
     lodash "^4.17.20"
