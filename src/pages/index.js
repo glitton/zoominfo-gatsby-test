@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   const [time, setTime] = useState(``)
@@ -32,7 +32,14 @@ const IndexPage = () => {
       <p>Now go build something great.</p>
       <p>Built on {process.env.__BUILD_DATE__}</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
+        <StaticImage
+          src="../images/gatsby-astronaut.png"
+          width={300}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="A Gatsby astronaut"
+          style={{ marginBottom: `1.45rem` }}
+        />
       </div>
       <h1>The time right now is {time}</h1>
       <Link to="/page-2/">Go to page 2</Link> <br />

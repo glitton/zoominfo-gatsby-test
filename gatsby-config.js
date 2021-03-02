@@ -17,6 +17,7 @@ module.exports = {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/paths/*`] },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-gatsby-cloud`,
