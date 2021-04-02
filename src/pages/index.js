@@ -9,7 +9,7 @@ const IndexPage = () => {
   const [time, setTime] = useState(``)
   useEffect(() => {
     const interval = setInterval(async () => {
-      const res = await fetch(`/functions/time.js`, {
+      const res = await fetch(`/api/time`, {
         method: "POST",
       }).then(res => res.json())
       setTime(
