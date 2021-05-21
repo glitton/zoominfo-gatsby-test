@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
@@ -26,7 +26,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <h1>Hi Dustin McCraw,</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
