@@ -8,7 +8,7 @@
     "babel-loader": "^8.2.2",
     "babel-preset-gatsby": "^1.0.0",
     "gastby": "^1.0.1",
-    "gatsby": "^3.6.0-next.5",
+    "gatsby": "^3.5.1",
     "gatsby-plugin-create-client-paths": "^3.0.0",
     "gatsby-plugin-gatsby-cloud": "^2.4.0-next.0",
     "gatsby-plugin-image": "^1.0.0",
