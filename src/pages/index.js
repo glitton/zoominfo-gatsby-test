@@ -33,7 +33,7 @@ const IndexPage = () => {
       <p>Built on {process.env.__BUILD_DATE__}</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <StaticImage
-          src="../images/gatsby astronaut.png"
+          src="../images/gatsby-astronaut.png"
           width={300}
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
