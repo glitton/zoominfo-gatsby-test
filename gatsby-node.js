@@ -23,6 +23,13 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   })
 
   createRedirect({
+    fromPath: "/velopers-slug%/api-documentation/http-api-error-messages",
+    toPath: "/about",
+    isPermanent: true,
+    force: true,
+  })
+
+  createRedirect({
     fromPath: "/about-all/",
     toPath: "/about/",
     statusCode: 200,
