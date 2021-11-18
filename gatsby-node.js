@@ -22,12 +22,12 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     force: true,
   })
 
-  createRedirect({
-    fromPath: "/velopers-slug%/api-documentation/http-api-error-messages",
-    toPath: "/about",
-    isPermanent: true,
-    force: true,
-  })
+  // createRedirect({
+  //   fromPath: "/velopers-slug%/api-documentation/http-api-error-messages",
+  //   toPath: "/about",
+  //   isPermanent: true,
+  //   force: true,
+  // })
 
   createRedirect({
     fromPath: "/about-all/",
@@ -61,3 +61,25 @@ exports.onCreateWebpackConfig = ({ plugins, actions }) => {
     ],
   })
 }
+
+// exports.onPostBuild = ({ store }) => {
+//   const { pages } = store.getState()
+//   for (const [pathname, page] of pages) {
+//     if (page.mode && page.mode !== `SSG`) {
+//       // index++
+
+//       console.log({
+//         pathname,
+//         matchPath: page.matchPath,
+//         genHtmlUsingPathname: generateHtmlPath(``, pathname),
+//         genHtmlUsingMatchPath: page.matchPath
+//           ? generateHtmlPath(``, page.matchPath)
+//           : `-no-match-path`,
+//         genPageDataUsingPathname: generatePageDataPath(``, pathname),
+//         genPageDataUsingMatchPath: page.matchPath
+//           ? generatePageDataPath(``, page.matchPath)
+//           : `-no-match-path`,
+//       })
+//     }
+//   }
+// }
