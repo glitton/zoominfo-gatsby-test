@@ -42,6 +42,33 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     force: true,
   })
 
+  createRedirect({
+    fromPath: `/books`,
+    toPath: `/sp/books`,
+    isPermanent: true,
+    ignoreCase: true,
+    language: `sp`,
+  })
+  createRedirect({
+    fromPath: `/resources?id=:id`,
+    toPath: `/resources/:id`,
+    isPermanent: true,
+    ignoreCase: true,
+  })
+  createRedirect({
+    fromPath: `/files`,
+    toPath: `/us/files`,
+    isPermanent: true,
+    ignoreCase: true,
+    country: `us`,
+  })
+  createRedirect({
+    fromPath: `/*`,
+    statusCode: 404,
+    isPermanent: true,
+    country: `ir,sy,cu,so`,
+  })
+
   const useCaseTemplatePath = path.resolve(`src/templates/use-cases/index.js`)
   const slug = `campaign-event/emoji.tinder.com`
 
