@@ -9,6 +9,14 @@ const path = require(`path`)
 // You can delete this file if you're not using it
 exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   createRedirect({
+    fromPath: `/*`,
+    toPath: `/404`,
+    statusCode: 404,
+    isPermanent: true,
+    country: `ir,sy,cu,so`,
+  })
+
+  createRedirect({
     fromPath: "/about-2/",
     toPath: "/about/",
     isPermanent: true,
@@ -49,24 +57,20 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     ignoreCase: true,
     language: `sp`,
   })
+
   createRedirect({
     fromPath: `/resources?id=:id`,
     toPath: `/resources/:id`,
     isPermanent: true,
     ignoreCase: true,
   })
+
   createRedirect({
     fromPath: `/files`,
     toPath: `/us/files`,
     isPermanent: true,
     ignoreCase: true,
     country: `us`,
-  })
-  createRedirect({
-    fromPath: `/*`,
-    statusCode: 404,
-    isPermanent: true,
-    country: `ir,sy,cu,so`,
   })
 
   const useCaseTemplatePath = path.resolve(`src/templates/use-cases/index.js`)
