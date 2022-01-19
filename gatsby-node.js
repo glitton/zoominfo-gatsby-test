@@ -10,8 +10,8 @@ const path = require(`path`)
 exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   createRedirect({
     fromPath: `/*`,
-    toPath: `/404`,
-    statusCode: 301,
+    toPath: `/*`,
+    statusCode: 403,
     isPermanent: true,
     country: `ir,sy,cu,so,ca`,
   })
