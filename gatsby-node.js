@@ -34,8 +34,8 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     country: "us",
   })
   createRedirect({
-    fromPath: "/us-foo",
-    toPath: "/client-only/foo",
+    fromPath: "/us-about",
+    toPath: "/about",
     statusCode: 301,
     country: "us",
   })
