@@ -33,6 +33,14 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     statusCode: 403,
     country: "us",
   })
+
+  createRedirect({
+    fromPath: "/illegal",
+    toPath: "/",
+    statusCode: 451,
+    country: "us",
+  })
+
   createRedirect({
     fromPath: "/us-about",
     toPath: "/about",
