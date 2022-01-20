@@ -8,12 +8,36 @@ const path = require(`path`)
 
 // You can delete this file if you're not using it
 exports.createPages = ({ actions: { createRedirect, createPage } }) => {
+  // createRedirect({
+  //   fromPath: `/*`,
+  //   toPath: `/*`,
+  //   statusCode: 500,
+  //   isPermanent: true,
+  //   country: `ir,sy,cu,so,ca`,
+  // })
   createRedirect({
-    fromPath: `/*`,
-    toPath: `/*`,
+    fromPath: "/server-error",
+    toPath: "/",
     statusCode: 500,
-    isPermanent: true,
-    country: `ir,sy,cu,so,ca`,
+    country: "us",
+  })
+  createRedirect({
+    fromPath: "/not-found",
+    toPath: "/",
+    statusCode: 404,
+    country: "us",
+  })
+  createRedirect({
+    fromPath: "/forbidden",
+    toPath: "/",
+    statusCode: 403,
+    country: "us",
+  })
+  createRedirect({
+    fromPath: "/us-foo",
+    toPath: "/client-only/foo",
+    statusCode: 301,
+    country: "us",
   })
 
   createRedirect({
