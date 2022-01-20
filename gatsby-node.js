@@ -11,7 +11,7 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   createRedirect({
     fromPath: `/*`,
     toPath: `/*`,
-    statusCode: 404,
+    statusCode: 403,
     isPermanent: true,
     country: `ir,sy,cu,so,ca`,
   })
