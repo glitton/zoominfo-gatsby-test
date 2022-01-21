@@ -6,7 +6,8 @@ import Seo from "../components/seo"
 const ServerErrorPage = () => (
   <Layout>
     <Seo title="ServerError" />
-    <h1>Can't see this page in the US</h1>
+    <h1>Server Error</h1>
+    <p>Can't see this page in the US</p>
   </Layout>
 )
 

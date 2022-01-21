@@ -6,7 +6,8 @@ import Seo from "../components/seo"
 const NotFoundPage = () => (
   <Layout>
     <Seo title="Not Found" />
-    <h1>Can't see this page in the US</h1>
+    <h1>Not Found</h1>
+    <p>Can't see this page in the US</p>
   </Layout>
 )
 
