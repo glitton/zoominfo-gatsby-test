@@ -13,39 +13,50 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   //   toPath: `/*`,
   //   statusCode: 500,
   //   isPermanent: true,
-  //   country: `ir,sy,cu,so,ca`,
+  //   conditions: {
+  //    country: [`ir`,`sy`,`cu`,`so`,`ca`]
   // })
   createRedirect({
     fromPath: "/server-error",
     toPath: "/",
     statusCode: 500,
-    country: "us",
+    conditions: {
+      country: ["us"],
+    },
   })
   createRedirect({
     fromPath: "/not-found",
     toPath: "/",
     statusCode: 404,
-    country: "us",
+    conditions: {
+      country: ["us"],
+    },
   })
   createRedirect({
     fromPath: "/forbidden",
     toPath: "/",
     statusCode: 403,
-    country: "us",
+    conditions: {
+      country: ["us"],
+    },
   })
 
   createRedirect({
     fromPath: "/illegal",
     toPath: "/",
     statusCode: 451,
-    country: "us",
+    conditions: {
+      country: ["us"],
+    },
   })
 
   createRedirect({
     fromPath: "/us-about",
     toPath: "/about",
     statusCode: 301,
-    country: "us",
+    conditions: {
+      country: ["us", "ca"],
+    },
   })
 
   createRedirect({
