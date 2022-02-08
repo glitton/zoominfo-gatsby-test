@@ -32,7 +32,9 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     // Unavailable For Legal Reasons
     statusCode: 451,
     // Comma separated list of countries
-    country: Object.values(blockedCountries),
+    conditions: {
+      country: Object.values(blockedCountries),
+    },
   })
 
   createRedirect({
