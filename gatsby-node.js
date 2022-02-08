@@ -16,6 +16,25 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   //   conditions: {
   //    country: [`ir`,`sy`,`cu`,`so`,`ca`]
   // })
+
+  const blockedCountries = {
+    cuba: `cu`,
+    iran: `ir`,
+    northKorea: `kp`,
+    sudan: `sd`,
+    syria: `sy`,
+    crimea: `ua-43`,
+  }
+
+  createRedirect({
+    fromPath: "/*",
+    toPath: "/",
+    // Unavailable For Legal Reasons
+    statusCode: 451,
+    // Comma separated list of countries
+    country: Object.values(blockedCountries),
+  })
+
   createRedirect({
     fromPath: "/server-error",
     toPath: "/",
@@ -29,7 +48,7 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     toPath: "/",
     statusCode: 404,
     conditions: {
-      country: ["us"],
+      country: "us",
     },
   })
   createRedirect({
@@ -98,7 +117,9 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     toPath: `/sp/books`,
     isPermanent: true,
     ignoreCase: true,
-    language: `sp`,
+    conditions: {
+      language: `sp`,
+    },
   })
 
   createRedirect({
@@ -113,7 +134,9 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     toPath: `/us/files`,
     isPermanent: true,
     ignoreCase: true,
-    country: `us`,
+    conditions: {
+      country: [`us`],
+    },
   })
 
   const useCaseTemplatePath = path.resolve(`src/templates/use-cases/index.js`)
