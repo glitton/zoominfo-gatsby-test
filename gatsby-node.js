@@ -67,7 +67,7 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     toPath: "/",
     statusCode: 451,
     conditions: {
-      country: ["us"],
+      country: "us",
     },
   })
 
