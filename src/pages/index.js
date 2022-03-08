@@ -55,7 +55,7 @@ const IndexPage = () => {
         Use cases
       </Link>{" "}
       <br />
-      <p>Build 1</p>
+      <p>Build 2</p>
     </Layout>
   )
 }
