@@ -94,6 +94,18 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     force: true,
   })
 
+  createRedirect({
+    fromPath: "/mypath-1",
+    toPath: "/mypath1",
+    statusCode: "301",
+  })
+
+  createRedirect({
+    fromPath: "/mypath-2",
+    toPath: "/mypath2",
+    statusCode: "fail",
+  })
+
   // createRedirect({
   //   fromPath: "/velopers-slug%/api-documentation/http-api-error-messages",
   //   toPath: "/about",
