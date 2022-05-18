@@ -153,6 +153,12 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     },
   })
 
+  createRedirect({
+    fromPath: `/donate`,
+    toPath: `https://develop-django.ligonier.org/donate/`,
+    statusCode: 200,
+  })
+
   const useCaseTemplatePath = path.resolve(`src/templates/use-cases/index.js`)
   const slug = `campaign-event/emoji.tinder.com`
 
