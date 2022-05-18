@@ -154,8 +154,8 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   })
 
   createRedirect({
-    fromPath: `/donate`,
-    toPath: `https://develop-django.ligonier.org/donate/`,
+    fromPath: `/donate/*`,
+    toPath: `https://develop-django.ligonier.org/donate/*`,
     statusCode: 200,
   })
 
