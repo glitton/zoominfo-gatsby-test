@@ -34,6 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
         mergeSecurityHeaders: false,
+        headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
