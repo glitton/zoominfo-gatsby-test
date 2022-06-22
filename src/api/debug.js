@@ -1,6 +1,6 @@
 module.exports = (req, res) => {
-  res.headers[`x-site-id`] = `dustins-site`
-  res.headers[`x-dustin-test`] = `mccraw`
+  res.header(`x-site-id`, `dustins-site`)
+  res.header(`x-dustin-test`, `mccraw`)
   res.status(200).send({
     host: req.host,
     hostname: req.hostname,
