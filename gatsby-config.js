@@ -34,7 +34,12 @@ module.exports = {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
         mergeSecurityHeaders: false,
-        headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
+        // headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
+        headers: {
+          "/*": [
+            "Content-Security-Policy: frame-ancestors https://api.zoominfo.com/",
+          ],
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
