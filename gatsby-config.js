@@ -38,6 +38,7 @@ module.exports = {
         headers: {
           "/*": [
             "Content-Security-Policy: frame-ancestors https://api.zoominfo.com",
+            "Access-Control-Allow-Origin: https://api.zoominfo.com",
           ],
         },
       },
