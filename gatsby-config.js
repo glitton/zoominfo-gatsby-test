@@ -40,7 +40,7 @@ module.exports = {
             "Content-Security-Policy: frame-ancestors https://app.zoominfo.com",
             "Access-Control-Allow-Origin: https://app.zoominfo.com",
             "X-Content-Type-Options: nosniff",
-            "X-Frame-Options: DENY",
+            "X-Frame-Options: ALLOW-FROM https://app.zoominfo.com",
             "X-XSS-Protection: 1; mode=block",
           ],
         },
