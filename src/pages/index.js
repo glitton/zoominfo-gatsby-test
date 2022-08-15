@@ -27,7 +27,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      <h1>Hi Dustin McCraw,</h1>
+      <h1>Hi Generosa,</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
       <p>Built on {process.env.__BUILD_DATE__}</p>
