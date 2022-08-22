@@ -30,20 +30,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-gatsby-cloud`,
-      options: {
-        mergeSecurityHeaders: false,
-        // headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
-        headers: {
-          "/*": [
-            "Content-Security-Policy: frame-ancestors 'self' *.planful.com *.zoominfo.com; object-src 'none';",
-            "Access-Control-Allow-Origin: *",
-            "X-Content-Type-Options: nosniff",
-          ],
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-gatsby-cloud`,
+    //   options: {
+    //     mergeSecurityHeaders: false,
+    //     // headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
+    //     headers: {
+    //       "/*": [
+    //         "Content-Security-Policy: frame-ancestors 'self' *.planful.com *.zoominfo.com; object-src 'none';",
+    //         "Access-Control-Allow-Origin: *",
+    //         "X-Content-Type-Options: nosniff",
+    //       ],
+    //     },
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
