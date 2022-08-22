@@ -37,11 +37,9 @@ module.exports = {
         // headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
         headers: {
           "/*": [
-            "Content-Security-Policy: frame-ancestors self https://*.zoominfo.com",
-            "Access-Control-Allow-Origin: https://*.zoominfo.com",
+            "Content-Security-Policy: frame-ancestors 'self' *.planful.com *.zoominfo.com; object-src 'none';",
+            "Access-Control-Allow-Origin: *",
             "X-Content-Type-Options: nosniff",
-            "X-Frame-Options: ALLOW-FROM https://app.zoominfo.com",
-            "X-XSS-Protection: 1; mode=block",
           ],
         },
       },
