@@ -36,7 +36,6 @@ module.exports = {
         mergeSecurityHeaders: false,
         headers: {
           "/*": [
-            "Content-Security-Policy: frame-ancestors 'self' *.planful.com *.zoominfo.com; object-src 'none';",
             "Access-Control-Allow-Origin: *",
             "X-Content-Type-Options: nosniff",
             "Referrer-Policy: unsafe-url",
