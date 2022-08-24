@@ -38,8 +38,7 @@ module.exports = {
           "/*": [
             "Access-Control-Allow-Origin: *",
             "X-Content-Type-Options: nosniff",
-            "Referrer-Policy: unsafe-url",
-            "X-XSS-Protection: 0",
+            "x-frame-options: SAMEORIGIN",
           ],
         },
       },
